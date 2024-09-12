@@ -1,7 +1,7 @@
-# Toast Library
+# Quick-Toastify Library
 
 A customizable toast notification library built with Next.js and TypeScript. Easily integrate toast notifications into your Next.js projects with customizable animations, durations, positions, and types.
-![Frontend_System_Design_Questions__Toast_Component___HLD_LLD](https://github.com/muhammadahmad1857/frontend-system-design/blob/main/toast-app/toast-component/public/preview.mkv)
+![Frontend_System_Design_Questions__Toast_Component___HLD_LLD](https://github.com/muhammadahmad1857/frontend-system-design/blob/main/toast-app/toast-component/public/preview.mp4)
 
 ## Features
 
@@ -27,10 +27,10 @@ First, import and use the `useToast` hook in your component:
 
 ```tsx
 import React from "react";
-import useToast from "your-toast-library";
+import useToast from "quick-toastify";
 
 export default function Home() {
-  const { toastComponent, triggerToast } = useToast("bottom-left");
+  const { toastComponent, triggerToast } = useToast("Your position here");
 
   return (
     <>
@@ -42,21 +42,20 @@ export default function Home() {
         <button
           onClick={() =>
             triggerToast({
-              type: "success",
-              message: "This is a success notification",
-              duration: 3000,
-              animationIn: "fade",
-              animationOut: "fade",
+              type: "your type here",
+              message: "Your messaage",
+              duration: duration here in milliseconds,
+              animationIn: "animation name",
+              animationOut: "animation name",
             })
           }
-          className="bg-green-500 hover:bg-green-600 btn animate-fade-in"
         >
           Success Fade Animation
         </button>
         {/* More buttons for different types and animations */}
       </div>
 
-      {toastComponent}
+      {toastComponent} {/*It's the thing which is most important without the library doesn't work*/}
     </>
   );
 }
@@ -112,7 +111,6 @@ You can specify the position of the toast notification on the screen by passing 
       animationOut: "pop",
     })
   }
-  className="bg-blue-500 hover:bg-blue-600 btn animate-pop-in"
 >
   Info Pop Animation
 </button>

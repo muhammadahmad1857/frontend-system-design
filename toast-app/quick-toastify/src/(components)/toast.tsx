@@ -1,5 +1,6 @@
 import React, { ReactNode, useEffect, useState } from "react";
-import "./toast.css";
+import "tailwindcss/tailwind.css"; // Import Tailwind first
+import "./toast.css"; // Then import your custom CSS
 import {
   AiOutlineCheckCircle,
   AiOutlineCloseCircle,
@@ -104,7 +105,7 @@ const Toast: React.FC<ToastProps> = ({
 
   return (
     <div
-      className={`flex items-center text-white p-4 mb-3 rounded-md shadow-md ${getAnimationClass()}`}
+      className={`toast flex items-center text-white p-4 mb-3 rounded-md shadow-md ${getAnimationClass()}`}
       style={{ backgroundColor, animationDuration: `${animationDuration}ms` }}
     >
       <div className="mr-3">{icons[type]}</div>
