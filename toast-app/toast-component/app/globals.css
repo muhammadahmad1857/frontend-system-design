@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn{
+   @apply px-10 outline-none py-6  text-white rounded  shadow-md transition-all duration-300 
+}
