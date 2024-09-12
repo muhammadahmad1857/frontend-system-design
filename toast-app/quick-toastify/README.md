@@ -1,8 +1,7 @@
 # Toast Library
 
 A customizable toast notification library built with Next.js and TypeScript. Easily integrate toast notifications into your Next.js projects with customizable animations, durations, positions, and types.
-
-[![Watch the video](./image.png)](https://youtu.be/VIDEO_ID)
+![Frontend_System_Design_Questions__Toast_Component___HLD_LLD](https://github.com/muhammadahmad1857/frontend-system-design/blob/main/toast-app/toast-component/public/preview.mkv)
 
 ## Features
 
