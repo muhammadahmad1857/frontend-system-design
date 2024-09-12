@@ -8,10 +8,7 @@ import React, {
   useEffect,
 } from "react";
 import Toast from "../(components)/toast";
-import ToastProps from "../../../quick-toastify/src/types/toastType";
-
-type ComponentProps = "top-left" | "top-right" | "bottom-left" | "bottom-right";
-
+import { ToastProps, ComponentProps } from "../types/toastType";
 
 const useToast = (position: ComponentProps = "top-left") => {
   const [toasts, setToasts] = useState<ToastProps[]>([]);
