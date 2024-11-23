@@ -1,6 +1,7 @@
 {
   "name": "quick-toastify",
-  "version": "2.0.1",
+  "version": "4.0.0",
+  "description": "This is a toast library built with TypeScript and TailwindCSS",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -13,28 +14,33 @@
     "nextjs",
     "toastify",
     "notification",
-    "typescript"
+    "typescript",
+    "tailwindcss"
   ],
   "author": "Muhammad Ahmad",
   "license": "ISC",
-  "description": "This is a toast library built with typescript and tailwindcss",
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^26.0.1",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^11.1.6",
-    "react": "^18.3.1",
+    "rollup": "^4.21.3",
     "rollup-plugin-dts": "^6.1.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "tailwindcss": "^3.4.11",
-    "tslib": "^2.7.0",
-    "typescript": "^5.6.2"
+    "typescript": "^5.6.2",
+    "tslib": "^2.7.0"
   },
   "dependencies": {
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.45",
-    "react-icons": "^5.3.0",
-    "rollup": "^4.21.3"
+    "react-icons": "^5.3.0"
   }
 }
